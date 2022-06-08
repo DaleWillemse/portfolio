@@ -14,7 +14,7 @@ let letter = '';
     currentText = texts[count];
     letter = currentText.slice(0, ++index);
 
-    document.querySelector('.typing').textContent = letter;
+    document.querySelector('.typingText').textContent = letter;
     if(letter.length === currentText.length){
         count++;
         index = 0;
@@ -25,8 +25,9 @@ let letter = '';
 
 //Hamburger menu
 const navToggle = document.querySelector('.navToggle');
-
-navToggle.addEventListener('click', () => {
-  document.body.classList.toggle('nav-open');
-});
+(function openNav(){
+    navToggle.addEventListener('click', () => {
+        document.body.classList.toggle('nav-open');
+    });
+}());
 //Hamburger menu end

@@ -1,5 +1,5 @@
-@font-face { font-family: ModularB; src: url('MODULAR-14.otf'); }
-@font-face { font-family: Modular; src: url('MODULAR-4.otf'); }
+
+@font-face { font-family: SpartanB; src: url('leaguespartan-bold.ttf'); }
 
 *{
     box-sizing: border-box;
@@ -10,11 +10,11 @@
 #wrapper{
     background:linear-gradient(rgb(0, 0, 0), rgb(22, 22, 22));
     background-attachment: fixed;
-    font-family: Modular;
+    font-family: SpartanB;
 }
 
-#header{
-    font-family:ModularB;
+header{
+    font-family:SpartanB;
     display: grid;
     grid-template-columns: 2fr 4fr;
     grid-template-rows: 1fr;
@@ -51,10 +51,10 @@ li a {
     margin: 1em;
 }
 
-.mid{
+.midTyping{
     position: relative;
     text-align: center;
-    top:8em;
+    top:13em;
     color: whitesmoke;
 }
 
@@ -65,7 +65,7 @@ li a {
 
 @media(max-width: 1100px){
     
-    #header{
+    header{
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 4em;
@@ -100,38 +100,38 @@ li a {
         z-index: 10;
     }
     
-    /* Navigation open styles */
-    .navList{
-        transform: translateX(100%);
-     }
-     
+    /* Navigation opening */
+    
     .nav-open .navList {
         position: fixed;
-        overflow-x: hidden;
         transform: translateX(0%);
         transition: transform 300ms cubic-bezier(.5, 0, .5, 1);
         right: 0;
         top: 0;
-        height: 100%;
+        height: 100vh;
         flex-direction: column;
         background:linear-gradient(rgb(22, 22, 22), rgb(0, 0, 0) );
         z-index: 9;
         border: 1px solid whitesmoke;
+        font-size: 0.9em;
+    }
+    
+    .navList{
+        transform: translateX(100%);
     }
 
     .nav-open a{
         display: inline-block;
-        margin: 0.5em;
-    }
-
-    .nav-open .navToggle{
-        border-right: 0px;
+        margin: 0.8em;
+        top: .8em;
     }
 
     .nav-open .navList li{
-        padding: 1em;
+        padding: 0.1em 1.2em;
     }
+    /* Navigation opening end*/
 
+    /*Hamburger icon*/
     .bar1, .bar2{
         width: 35px;
         height: 5px;
@@ -147,17 +147,27 @@ li a {
     .nav-open .bar2 {
         transform: rotate(45deg) translate(-4px, -4px);
     }
+    /*Hamburger icon end*/
     /*Hamburger menu end*/
+    
+    .midTyping{
+        position: relative;
+        text-align: center;
+        top:7em;
+        color: whitesmoke;
+    }
 }
 /*Phone scaling end*/
 
 
 /* Typing animation*/
-.typing{
+.typingText{
     position: relative;
+    font-size: 1.5em;
+    top:-2em;
 }
 
-.typing::after{
+.typingText::after{
     content: "";
     position: relative;
     width: 1em;
@@ -190,7 +200,7 @@ a:hover{
 a:before{
     content: "";
     position: absolute;
-    bottom: -0.4em;
+    bottom: -0.2em;
     left: 0.4em;
     width: 0;
     height: 0;
@@ -233,7 +243,7 @@ a:hover:before{
 a:after{
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: 0.2em;
     left:-0.4em;
     width: 0;
     height: 0;
