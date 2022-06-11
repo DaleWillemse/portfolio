@@ -1,6 +1,6 @@
 
 //blink typing 
-const texts = ['Hi! My name is Dale Willemse.', 'Welcome to my portfolio.'];
+const texts = ['Hi! My name is Dale.', 'Welcome to my portfolio.'];
 let count = 0;
 let index = 0;
 let currentText = '';
