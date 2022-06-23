@@ -1,7 +1,7 @@
 # portfolio
 
 Theme: retro-glitchy.
-Font: Modular text
+Font: LeagueSpartan
 
 
 Notes to myself:
