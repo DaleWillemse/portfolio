@@ -7,10 +7,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background: linear-gradient(rgb(0, 0, 0), rgb(22, 22, 22));
 }
 
 #wrapper {
+  background: linear-gradient(rgb(0, 0, 0), rgb(22, 22, 22));
   background-attachment: fixed;
   font-family: SpartanB;
 }
