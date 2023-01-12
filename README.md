@@ -1,14 +1,5 @@
-# portfolio
-
-Theme: retro-glitchy.
-Font: LeagueSpartan
-
-
-Notes to myself:
---need to work on logo
---work on hamburger menu dissapearing -when clicking close 
-                                      -after scrolling down  
-                                      -after clicking a link
---decide on layout
---typing text needs to go in reverse
-
+<h1>Work in progress..</h1>  
+Need good projects to show on the site.
+<br/>
+<br/>
+coming soon :)
