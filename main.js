@@ -2,7 +2,7 @@
 const texts = [
   "Hi! My name is Dale.",
   "Welcome to my portfolio.",
-  "Take a look :).",
+  "Take a look :)",
 ];
 let count = 0;
 let index = 0;
