@@ -62,17 +62,53 @@ li a {
 }
 
 .sectionGrid {
+  color: white;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 100vh;
+  grid-template-columns: 100%;
   margin: 1.5em;
   outline: 2px solid #4dc9c9f5;
   border-radius: 1em;
 }
 
+#headings {
+  font-size: 50px;
+  margin: 50px 50px 10px 50px;
+  border-bottom: 1px solid #00ffff;
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.projectBlocks {
+  /* outline: 1px solid #4dc9c9f5;
+  border-radius: 1em; */
+}
+
+#subHeading {
+  font-size: 20px;
+  font-size: 25px;
+  margin: 20px 0px 10px 30px;
+}
+
+#subHeadingText {
+  font-size: 25px;
+  font-size: 18px;
+  margin: 10px 0px 0px 35px;
+}
+
 /*Phone scaling */
 
-@media (max-width: 1000px) {
+@media (max-width: 1080px) {
+  #headings {
+    text-align: center;
+  }
+
+  .projectGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
   header {
     display: grid;
     grid-template-columns: 100%;
