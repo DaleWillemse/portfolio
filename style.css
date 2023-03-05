@@ -82,20 +82,36 @@ li a {
 }
 
 .projectBlocks {
-  /* outline: 1px solid #4dc9c9f5;
-  border-radius: 1em; */
+  margin: 0.5em;
+  outline: 1px solid #4dc9c9f5;
+  border-radius: 1em;
+}
+
+.projectBlocks p {
+  text-align: center;
+}
+
+#projectImages {
+  width: 30em;
+  height: 20em;
+}
+#aStar {
+  width: 20em;
+  height: 20em;
+}
+#platformer {
+  width: 30em;
+  height: 15em;
 }
 
 #subHeading {
-  font-size: 20px;
   font-size: 25px;
-  margin: 20px 0px 10px 30px;
+  margin: 20px 0px 10px 20px;
 }
 
 #subHeadingText {
-  font-size: 25px;
   font-size: 18px;
-  margin: 10px 0px 0px 35px;
+  margin: 10px 0px 0px 10px;
 }
 
 /*Phone scaling */
@@ -103,6 +119,19 @@ li a {
 @media (max-width: 1080px) {
   #headings {
     text-align: center;
+  }
+
+  #projectImages {
+    width: 13em;
+    height: 10em;
+  }
+  #aStar {
+    width: 13em;
+    height: 13em;
+  }
+  #platformer {
+    width: 13em;
+    height: 8em;
   }
 
   .projectGrid {
@@ -236,7 +265,7 @@ li a {
 /* Typing animation end*/
 
 /* Selection animation */
-a:hover {
+li a:hover {
   animation: shadow 200ms both;
 }
 
@@ -261,7 +290,7 @@ a:hover {
   }
 }
 
-a:before {
+li a:before {
   content: "";
   position: absolute;
   bottom: -0.2em;
@@ -271,7 +300,7 @@ a:before {
   background: transparent;
 }
 
-a:hover:before {
+li a:hover:before {
   border: 2px solid #38b6ff;
   animation: animate 500ms both;
 }
@@ -302,7 +331,7 @@ a:hover:before {
     border-left-color: transparent;
   }
 }
-a:after {
+li a:after {
   content: "";
   position: absolute;
   bottom: 0.2em;
@@ -312,7 +341,7 @@ a:after {
   background: transparent;
 }
 
-a:hover:after {
+li a:hover:after {
   border: 2px solid #38b6ff;
   animation: animate2 500ms both;
 }
