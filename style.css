@@ -99,6 +99,10 @@ li a {
   width: 20em;
   height: 20em;
 }
+#taskTracking {
+  width: 35em;
+  height: 20em;
+}
 #platformer {
   width: 30em;
   height: 15em;
@@ -132,6 +136,10 @@ li a {
   #platformer {
     width: 13em;
     height: 8em;
+  }
+  #taskTracking {
+    width: 13em;
+    height: 10em;
   }
 
   .projectGrid {
