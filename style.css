@@ -24,6 +24,19 @@ header {
   grid-template-rows: 12em;
 }
 
+/* scroll bar */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00ffff;
+}
+
 #nameLogo {
   position: relative;
   top: -2em;
