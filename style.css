@@ -7,6 +7,10 @@
   margin: 0;
 }
 
+body {
+  background-color: black;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -154,20 +158,20 @@ a {
   }
 
   #projectImages {
-    width: 13em;
-    height: 10em;
+    width: 14em;
+    height: 8em;
   }
   #aStar {
-    width: 13em;
-    height: 13em;
+    width: 10em;
+    height: 10em;
   }
   #platformer {
-    width: 13em;
+    width: 16em;
     height: 8em;
   }
   #taskTracking {
-    width: 13em;
-    height: 10em;
+    width: 14em;
+    height: 9em;
   }
 
   .projectGrid {
