@@ -5,16 +5,14 @@
 
 * {
   margin: 0;
-  background-color: black;
 }
 
 html {
   scroll-behavior: smooth;
+  background-color: black;
 }
 
 #wrapper {
-  background: linear-gradient(rgb(0, 0, 0), rgb(22, 22, 22));
-  background-attachment: fixed;
   font-family: SpartanB;
 }
 
@@ -73,6 +71,7 @@ a {
   text-decoration: none;
   color: white;
 }
+
 .midTyping {
   position: relative;
   text-align: center;
@@ -109,6 +108,10 @@ a {
   border-radius: 1em;
 }
 
+.projectBlocks:hover {
+  box-shadow: #00ffff -5px -5px 10px 5px, #ff00ff 5px 0 10px 5px;
+}
+
 .projectBlocks p {
   text-align: center;
 }
@@ -137,11 +140,12 @@ a {
 
 #subHeadingText {
   font-size: 18px;
-  margin: 10px 0px 0px 10px;
+  margin: 15px 0px 0px 10px;
 }
 
 #aboutMe {
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 #contactMe {
   text-align: center;
