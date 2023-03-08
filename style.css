@@ -87,7 +87,7 @@ a {
   display: grid;
   grid-template-columns: 100%;
   margin: 1.5em;
-  outline: 2px solid #4dc9c9f5;
+  /* outline: 2px solid #4dc9c9f5; */
   border-radius: 1em;
 }
 
@@ -109,7 +109,7 @@ a {
 }
 
 .projectBlocks:hover {
-  box-shadow: #00ffff -5px -5px 10px 5px, #ff00ff 5px 0 10px 5px;
+  animation: projectSelection 250ms both;
 }
 
 .projectBlocks p {
@@ -176,6 +176,10 @@ a {
   }
 
   .projectGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #aboutMe {
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -414,3 +418,22 @@ li a:hover:after {
   }
 }
 /* Selection animation end */
+
+@keyframes projectSelection {
+  /* box-shadow: #00ffff -5px -5px 10px 5px, #ff00ff 5px 0 10px 5px; */
+  0% {
+    box-shadow: #00ffff 0px 0px 0px 0px, #ff00ff 0px 0 0px 0px;
+  }
+  25% {
+    box-shadow: #00ffff -1px -1px 3px 1px, #ff00ff 1px 0 3px 1px;
+  }
+  50% {
+    box-shadow: #00ffff -2px -2px 5px 2px, #ff00ff 2px 0 5px 2px;
+  }
+  75% {
+    box-shadow: #00ffff -4px -4px 8px 4px, #ff00ff 4px 0 8px 4px;
+  }
+  100% {
+    box-shadow: #00ffff -5px -5px 10px 5px, #ff00ff 5px 0 10px 5px;
+  }
+}
