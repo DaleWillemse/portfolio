@@ -131,7 +131,7 @@ a {
 }
 
 #leftAboutText {
-  margin-left: 5em;
+  margin-left: 10em;
 }
 
 #projectImages {
@@ -171,6 +171,7 @@ a {
 
 #contactMe {
   text-align: center;
+  border: 1px solid white;
 }
 
 /*Phone scaling */
