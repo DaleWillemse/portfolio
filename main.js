@@ -32,3 +32,15 @@ const navToggle = document.querySelector(".navToggle");
   });
 })();
 // Hamburger menu end
+
+// Dark-Light mode
+let theme = document.getElementById("themeBtn");
+let logo = document.getElementById("nameLogo");
+theme.onclick = function () {
+  document.body.classList.toggle("light-body");
+  if (document.body.classList.contains("light-body")) {
+    logo.src = "images/nameLogoLight.png";
+  } else {
+    logo.src = "images/nameLogo.png";
+  }
+};

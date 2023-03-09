@@ -12,8 +12,19 @@ html {
   background-color: black;
 }
 
-#wrapper {
+.wrapper {
   font-family: SpartanB;
+  color: whitesmoke;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.light-body {
+  background-color: white;
+  color: black;
 }
 
 header {
@@ -44,10 +55,39 @@ header {
   height: 15em;
 }
 
+#themeBtn {
+  background-image: linear-gradient(#00ffff, #ff00ff);
+  position: absolute;
+  left: 95%;
+  top: 1%;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+#sun {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+#sunImg {
+  position: absolute;
+  font-size: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .navList {
   display: flex;
   text-decoration: none;
-  color: white;
+  /* color: white; */
   position: relative;
   float: right;
   list-style: none;
@@ -63,19 +103,19 @@ li a {
   font-size: 1.7em;
   text-decoration: none;
   position: relative;
-  color: whitesmoke;
+  /* color: whitesmoke; */
   margin: 1em;
 }
 
 a {
   text-decoration: none;
-  color: white;
+  /* color: white; */
 }
 
 .midTyping {
   position: relative;
   text-align: center;
-  color: whitesmoke;
+  /* color: whitesmoke; */
 }
 
 .navToggle {
@@ -83,7 +123,7 @@ a {
 }
 
 .sectionGrid {
-  color: white;
+  /* color: white; */
   display: grid;
   grid-template-columns: 100%;
   margin: 1.5em;
@@ -200,6 +240,10 @@ a {
     height: 9em;
   }
 
+  #themeBtn {
+    left: 5%;
+  }
+
   .projectGrid {
     display: grid;
     grid-template-columns: 1fr;
@@ -303,7 +347,7 @@ a {
   .midTyping {
     position: relative;
     text-align: center;
-    color: whitesmoke;
+    /* color: whitesmoke; */
   }
 }
 /*Phone scaling end*/
