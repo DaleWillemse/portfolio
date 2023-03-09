@@ -210,8 +210,12 @@ a {
 }
 
 #contactMe {
-  text-align: center;
-  border: 1px solid white;
+  text-align: justify;
+  display: grid;
+  margin: 2em 0 2em 2em;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 20px;
+  /* border: 1px solid white; */
 }
 
 /*Phone scaling */
@@ -242,6 +246,18 @@ a {
 
   #themeBtn {
     left: 5%;
+  }
+
+  #contactMe {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 20px;
+    margin: 0;
+    /* border: 1px solid white; */
+  }
+  #contactMe div {
+    margin-top: 1em;
   }
 
   .projectGrid {
