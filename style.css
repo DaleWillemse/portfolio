@@ -364,7 +364,7 @@ a {
   width: 1em;
   right: -0.1em;
   height: 90%;
-  border-right: 2px solid whitesmoke;
+  border-right: 2px solid;
   animation: blink 800ms infinite;
 }
 
